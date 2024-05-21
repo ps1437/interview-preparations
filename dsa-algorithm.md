@@ -30,11 +30,14 @@
 
 6. **Hash Tables**
    - Hash Map operations (insertion, deletion, lookup)
+   - Building a Hashtable
    - Collision handling techniques (chaining, open addressing)
 
 7. **Heaps**
    - Binary Heaps
    - Priority Queue operations
+   - Min And Max Heap
+   - Heap Representation in Array
 
 8. **Tries**
    - Trie structure
