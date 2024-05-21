@@ -15,5 +15,5 @@ This repository is a comprehensive collection of interview preparation materials
 
 1. **Clone the Repository**:
    ```sh
-   git clone https://github.com/yourusername/interview-preperations.git
-   cd interview-preperations
+   git clone https://github.com/ps1437/interview-preparations.git
+   cd interview-preparations
