@@ -19,6 +19,9 @@
    - Binary Search Trees (BST)
    - Tree traversals (Inorder, Preorder, Postorder)
    - Balanced Trees (AVL, Red-Black Trees)
+   - Segment Trees
+   - AVL Trees
+   - B-Trees
 
 5. **Graphs**
    - Graph representations (Adjacency Matrix, Adjacency List)
@@ -41,13 +44,7 @@
    - Union and Find operations
    - Path compression and union by rank
 
-10. **Advanced Data Structures**
-    - Segment Trees
-    - Fenwick Trees (Binary Indexed Trees)
-    - AVL Trees
-    - B-Trees
-
-11. **Graph Algorithms**
+10. **Graph Algorithms**
     - Minimum Spanning Tree (Prim's, Kruskal's)
     - Topological Sorting
     - Network Flow algorithms
