@@ -3,6 +3,7 @@
 1. **Arrays**
    - Basic operations (Add, Delete,Search,Update)
    - Array manipulation techniques
+   - 2D Array
 
 2. **Linked Lists**
    - Singly Linked Lists
