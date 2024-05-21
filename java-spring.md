@@ -66,6 +66,7 @@
    - Explain the Spring Bean lifecycle.
    - How does Spring handle circular dependencies between beans?
    - Explain the use of profiles in Spring configuration.
+ ref : (Prototype scope) [https://apurvsheth.medium.com/spring-boot-bean-scope-is-prototype-really-a-prototype-b7c32e05ce89]
 
 2. **Annotations and Configuration**
    - What are stereotype annotations (e.g., @Service, @Component, @Repository)?
