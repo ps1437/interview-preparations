@@ -10,10 +10,12 @@
    - What is the String Pool?
    - How do you compare two strings in Java?
    - Explain `StringBuilder` and `StringBuffer`. When should each be used?
+   
+   Reference : String [https://medium.com/nerd-for-tech/concept-of-string-pool-and-string-object-creation-in-java-27ed2b3089f5]
 
 2. **Object-Oriented Programming**
    - Why doesn’t Java support multiple inheritance?
-   - What is the difference between overloading and overriding?
+   - What is the difference between overloading and overriding (Dynamic and compile time polymorphism) ?
    - What is the purpose of the `final`, `static`, `finally`, `finalize`, `this`, `super` keywords?
    - What is an abstract class, and how does it differ from an interface?
    - Can we create an object for an interface?
@@ -22,6 +24,8 @@
    - What is the difference between heap and stack memory?
    - Explain garbage collection in Java. How does it work?
    - What are memory leaks, and how can they be prevented in Java?
+   - What are the different parts of Heap ( old and the new generation etc)
+   - What algorithm JVM used to clean up memory (mark & sweep)
 
 4. **Collections Framework**
    - How does HashMap work in Java?
@@ -30,10 +34,19 @@
    - What is the difference between ArrayList and LinkedList?
    - How can we create a synchronized collection from a given collection?
    - Explain the difference between Set and List in Java.
+   - How does ConcurrentHashMap work in Java?
    - What is the difference between fail-fast and fail-safe iterators?
+   - How to use custome key in Map ( equals and hashcode implimentation)
+   - what is hash collision in java?
+   - What are the performance characteristics of ArrayList and LinkedList for operations like insertion, deletion, and retrieval?
+
+   Reference : Collections [https://medium.com/@harendrakumarrajpoot5/top-50-java-collections-interview-questions-you-need-to-know-e55fcdc8dbfb]
 
 5. **Exception Handling**
    - What is the difference between checked and unchecked exceptions?
+   - Create a Custom Exception
+   - Try , Catch & finally
+   - When Finally block is not executed ( System.exit(), Infinite loop or system crush)
    - How does the try-with-resources statement work?
    - Explain the purpose of the `throw` and `throws` keywords.
 
@@ -43,16 +56,18 @@
    - What is the difference between `notify()` and `notifyAll()`?
    - What are the different states of a thread lifecycle?
    - What is the difference between `Runnable` and `Callable` in Java?
+   - Sleep vs wait
 
 7. **Design Patterns**
    - Explain different design patterns you have worked with, such as Singleton, Factory, Prototype, Proxy, and Builder.
-   - What is the Dependency Injection pattern, and how is it implemented in Spring?
+   - Singleton - How can we break Singleton design pattern
 
 8. **Miscellaneous**
    - What is an immutable class? How to create an immutable class?
    - How to avoid deadlock in Java?
    - What is the Just-In-Time (JIT) compiler?
    - Explain the concept of Serialization and Deserialization in Java.
+   - What is Externalization
    - What is a Java ClassLoader, and what are its types?
 
 ## Spring Framework
@@ -88,11 +103,8 @@
    - What is the purpose of the Model in Spring MVC?
    - Differentiate between @RequestParam and @PathVariable annotations in Spring MVC.
    - Explain the role of ViewResolver in Spring MVC.
-   - What is the difference between Model.addAttribute() and ModelAndView in Spring MVC?
-   - How does Spring MVC support internationalization and localization?
    - What is the purpose of the @ResponseBody annotation in Spring MVC?
    - Explain the concept of Interceptors in Spring MVC and when to use them.
-   - What is the role of the RedirectAttributes interface in Spring MVC?
    - How does Spring MVC handle file uploads?
    - Explain the use of @Valid and @ModelAttribute annotations in form handling with Spring MVC.
 
@@ -106,31 +118,45 @@
    - What is Spring Boot? Why should you use it?
    - What is the difference between Spring Boot and Spring MVC?
    - Explain the @SpringBootApplication and @EnableAutoConfiguration annotations in Spring Boot.
+   - How Springboot work internally ?
    - What is Spring Boot Actuator, and what are its advantages?
    - How do you configure external properties in Spring Boot?
    - What is the purpose of the @RestController annotation in Spring Boot?
    - Explain the Spring Boot Starter concept and its benefits.
    - What are Spring Boot Profiles, and how are they used?
    - How does Spring Boot handle dependency management?
-   - What is the role of embedded servers in Spring Boot?
+   - What is the role of embedded servers in Spring Boot and type of webserver its supports?
 
 7. **Spring Data**
    - What is JpaRepository, and how does it differ from other Spring Data repositories?
    - What are the benefits of using JPA Repository in Spring Data?
    - Explain the @Transactional annotation in the context of Spring Data.
+   - Explain Propogation and Isolation level
    - What are the different transaction strategies available in Spring Data?
    - How do you use the CrudRepository and PagingAndSortingRepository interfaces in Spring Data?
-   - What is Spring Data JPA, and how does it simplify data access in Spring applications?
-   - What is the purpose of Query Methods in Spring Data repositories?
-   - Explain the concept of Entity Graphs in Spring Data JPA and when to use them.
    - What are the advantages of using Specifications in Spring Data JPA?
-   - How does Spring Data handle pagination and sorting of data?
+
+   Ref : (Transcation Propoagtion) [https://www.youtube.com/watch?v=IVHcWTegWyM&t=2574s&pp=ygUccHJvcG9nYXRpb24gbGV2ZWwgc3ByaW5nYm9vdA%3D%3D]
+         (Transction Isolation ) [https://www.youtube.com/watch?v=7rNiIavYB2w&t=1052s]
 
 8. **Miscellaneous**
    - How to configure a Spring web application?
    - What is the difference between @PathVariable and @RequestParam?
    - How to handle null conditions for path variables before reaching the controller?
-   - What is the role of the Spring Security module?
+  
+
+9. **Spring security**
+   - How to enable securtiy in sprinboot
+   - What are authentication and authorization in Spring Security?
+   - JWT based Authentication
+   - What is JWT , What is contains
+   - What is Claim in JWT and Types of claims.
+   - Token vs Access token vs Refresh Token
+   - What are the key components of Spring Security?
+   - How to implement a custom filter in Spring Security?
+   - What do @Secured and @RolesAllowed do? What is the difference between them?
+   - Difference between hashing and encryption ( password- always hashed )
+
 
 ## SQL
 
@@ -165,35 +191,32 @@
    - Explain the concept of service discovery in microservices architecture.
    - What are the benefits of using message brokers (e.g., Kafka, RabbitMQ) in microservices communication?
    - What is Circuit Breaker pattern, and how does it help in microservices communication resilience?
-   - What are gRPC and Protocol Buffers, and how do they differ from RESTful communication in microservices?
    - What role does a service registry like Netflix Eureka play in microservices communication?
    - Explain the concept of event-driven architecture in the context of microservices communication.
    - What is the purpose of API versioning in microservices?
    - How do microservices handle security and authentication during communication?
 
 3. **Spring Cloud**
-   - Explain Spring Cloud and its various modules (e.g., Netflix OSS, Spring Cloud Config, Spring Cloud Netflix, Spring Cloud Sleuth).
-   - What is the purpose of an API Gateway in a microservices architecture, and how does Spring Cloud Gateway differ from Zuul?
-   - What is a Discovery Service, and how does it help in dynamic service registration and discovery in microservices?
-   - Explain the concept of service registry and discovery using Netflix Eureka in Spring Cloud.
-   - What is client-side load balancing, and how does it work in microservices with Spring Cloud?
-   - How does Spring Cloud Config facilitate externalized configuration management in microservices?
-   - What role does Spring Cloud Netflix play in providing features such as service discovery, circuit breakers, and intelligent routing?
-   - Explain the use of Spring Cloud Sleuth for distributed tracing in microservices.
-   - What is the purpose of distributed configuration management in Spring Cloud, and how does it differ from traditional configuration management approaches?
-   -  How does Spring Cloud handle fault tolerance and resilience in microservices communication?
+   - Spring Cloud Modules: Explanation and examples (Netflix OSS, Spring Cloud Config, Spring Cloud Netflix, Spring Cloud Sleuth).
+   - API Gateway in Microservices: Purpose and comparison of Spring Cloud Gateway with Zuul.
+   - Discovery Service: Benefits for dynamic service registration and discovery in microservices.
+   - Service Registry and Discovery using Netflix Eureka: Explanation within Spring Cloud.
+   - Client-Side Load Balancing: Functionality and usage in microservices with Spring Cloud.
+   - Spring Cloud Config: Role in externalized configuration management for microservices.
+   - Spring Cloud Netflix: Features like service discovery, circuit breakers, and routing.
+   - Spring Cloud Sleuth: Use in distributed tracing for microservices.
+   - Distributed Configuration Management: Purpose and differences from traditional approaches in Spring Cloud.
+   - Fault Tolerance and Resilience in Spring Cloud: Handling in microservices communication.
 
 4. **Resilience and Monitoring**
    - What is the Circuit Breaker pattern, and how does it help in building resilient microservices? 
    - How can you implement the Circuit Breaker pattern in Spring Boot applications using libraries like Netflix Hystrix or Resilience4j?
-   - Explain the concept of centralized logging in microservices, and what are the benefits of using tools like ELK Stack (Elasticsearch, Logstash, Kibana) or Splunk? Rate your familiarity with this topic.
-   - What is a Trace ID, and how does it help in distributed tracing for monitoring microservices interactions?
+   - Explain the concept of centralized logging in microservices, and what are the benefits of using tools like ELK Stack (Elasticsearch, Logstash, Kibana) or Splunk?
+   - What is a Trace ID & Span Id, and how does it help in distributed tracing for monitoring microservices interactions?
    - How do you implement distributed tracing in microservices using tools like Zipkin or Jaeger? Rate your experience with distributed tracing.
-   - What are metrics, and how are they used for monitoring microservices performance? Rate your familiarity with using metrics for monitoring.
-   - Explain the concept of health checks in microservices, and how can you implement them using Spring Boot Actuator? Rate your knowledge on implementing health checks.
-   - What is log aggregation, and how does it differ from centralized logging? Rate your understanding of log aggregation.
+   - Explain the concept of health checks in microservices, and how can you implement them using Spring Boot Actuator? 
    - How can you monitor the performance and availability of microservices in production environments using tools like Prometheus and Grafana? Rate your experience with using monitoring tools.
-   - What role do alerting and notifications play in microservices monitoring, and how can you set up alerting rules using tools like Prometheus Alertmanager or Grafana? Rate your familiarity with setting up alerts.
+   - What role do alerting and notifications play in microservices monitoring, and how can you set up alerting rules using tools like Prometheus Alertmanager or Grafana?
 
 
 5. **Security**
@@ -207,6 +230,9 @@
    - What is load balancing in microservices?
    - Explain database per microservice design pattern.
    - How do you implement service scaling in a microservices architecture?
+
+   Reference : (Micro service design pattern) [https://medium.com/capital-one-tech/10-microservices-design-patterns-for-better-architecture-befa810ca44e]
+       (Implimentation example ) [https://www.vinsguru.com/category/design-pattern/]
 
 ## Hibernate
 
