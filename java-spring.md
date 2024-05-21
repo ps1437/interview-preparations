@@ -1,8 +1,10 @@
 
-```markdown
+
 # Java Spring Interview Questions
 
 ## Core Java
+
+
 
 1. **String Handling**
    - What are different ways to create a String object?
@@ -11,7 +13,7 @@
    - How do you compare two strings in Java?
    - Explain `StringBuilder` and `StringBuffer`. When should each be used?
    
-   Reference : String [https://medium.com/nerd-for-tech/concept-of-string-pool-and-string-object-creation-in-java-27ed2b3089f5]
+   Reference : String (https://medium.com/nerd-for-tech/concept-of-string-pool-and-string-object-creation-in-java-27ed2b3089f5)
 
 2. **Object-Oriented Programming**
    - Why doesn’t Java support multiple inheritance?
@@ -40,7 +42,7 @@
    - what is hash collision in java?
    - What are the performance characteristics of ArrayList and LinkedList for operations like insertion, deletion, and retrieval?
 
-   Reference : Collections [https://medium.com/@harendrakumarrajpoot5/top-50-java-collections-interview-questions-you-need-to-know-e55fcdc8dbfb]
+   Reference : [Collections] (https://medium.com/@harendrakumarrajpoot5/top-50-java-collections-interview-questions-you-need-to-know-e55fcdc8dbfb)
 
 5. **Exception Handling**
    - What is the difference between checked and unchecked exceptions?
@@ -82,7 +84,7 @@
    - Explain the use of profiles in Spring configuration.
    - How to configure multiple datasource (in spring and springboot)
 
-   ref : (Prototype scope) [https://apurvsheth.medium.com/spring-boot-bean-scope-is-prototype-really-a-prototype-b7c32e05ce89]
+   ref : Prototype scope ( https://apurvsheth.medium.com/spring-boot-bean-scope-is-prototype-really-a-prototype-b7c32e05ce89)
 
 2. **Annotations and Configuration**
    - What are stereotype annotations (e.g., @Service, @Component, @Repository)?
@@ -136,8 +138,8 @@
    - How do you use the CrudRepository and PagingAndSortingRepository interfaces in Spring Data?
    - What are the advantages of using Specifications in Spring Data JPA?
 
-   Ref : (Transcation Propoagtion) [https://www.youtube.com/watch?v=IVHcWTegWyM&t=2574s&pp=ygUccHJvcG9nYXRpb24gbGV2ZWwgc3ByaW5nYm9vdA%3D%3D]
-         (Transction Isolation ) [https://www.youtube.com/watch?v=7rNiIavYB2w&t=1052s]
+   Ref : Transcation Propoagtion (https://www.youtube.com/watch?v=IVHcWTegWyM&t=2574s&pp=ygUccHJvcG9nYXRpb24gbGV2ZWwgc3ByaW5nYm9vdA%3D%3D)
+         Transction Isolation  (https://www.youtube.com/watch?v=7rNiIavYB2w&t=1052s)
 
 8. **Miscellaneous**
    - How to configure a Spring web application?
@@ -231,8 +233,8 @@
    - Explain database per microservice design pattern.
    - How do you implement service scaling in a microservices architecture?
 
-   Reference : (Micro service design pattern) [https://medium.com/capital-one-tech/10-microservices-design-patterns-for-better-architecture-befa810ca44e]
-       (Implimentation example ) [https://www.vinsguru.com/category/design-pattern/]
+   Reference : Micro service design pattern [https://medium.com/capital-one-tech/10-microservices-design-patterns-for-better-architecture-befa810ca44e]
+       Implimentation example [https://www.vinsguru.com/category/design-pattern/]
 
 ## Hibernate
 
@@ -258,6 +260,6 @@
    - What is the purpose of the @Lazy annotation in Hibernate?
 
 
-*Ref: (Core java ) [https://www.journaldev.com/2366/core-java-interview-questions-and-answers]
-*Ref : (Microservices, Design pattern, Kafka ) [https://www.vinsguru.com/]
-```
+*Ref: Core java (https://www.journaldev.com/2366/core-java-interview-questions-and-answers)
+*Ref : Microservices, Design pattern, Kafka (https://www.vinsguru.com/)
+
