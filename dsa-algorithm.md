@@ -95,8 +95,7 @@ Note:
 
 ## Searching Algorithms
 1. **Linear Search**
-2. **Binary Search** *
-3. **Ternary Search**
+2. **Binary Search** * ( Basic, On Anwser and 2D Matrix)
 
 ## Dynamic Programming
 1. **Knapsack Problem** *
