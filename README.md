@@ -9,6 +9,7 @@ This repository is a comprehensive collection of interview preparation materials
 - **java-spring.md**: Focuses on core Java and Spring framework interview questions. This includes questions on Java fundamentals, Spring annotations, Spring Boot, Spring Data, microservices, Hibernate, and more.
 
 - **react.md**: Includes a wide range of React interview questions, covering hooks, state management, lifecycle methods, and best practices.
+- **dsa-algorithm.md**:   Includes a wide range of Algorithm and Data Structure (Order wise preparations)
 
 ## How to Use This Repository
 
