@@ -1,3 +1,85 @@
+# Data Structures 
+
+1. **Arrays**
+   - Basic operations (Add, Delete,Search,Update)
+   - Array manipulation techniques
+
+2. **Linked Lists**
+   - Singly Linked Lists
+   - Doubly Linked Lists
+   - Circular Linked Lists
+
+3. **Stacks and Queues**
+   - Stack operations (push, pop, peek)
+   - Queue operations (enqueue, dequeue, peek)
+
+4. **Trees**
+   - Binary Trees
+   - Binary Search Trees (BST)
+   - Tree traversals (Inorder, Preorder, Postorder)
+   - Balanced Trees (AVL, Red-Black Trees)
+
+5. **Graphs**
+   - Graph representations (Adjacency Matrix, Adjacency List)
+   - Graph traversal algorithms (DFS, BFS)
+   - Shortest path algorithms (Dijkstra's, Bellman-Ford)
+
+6. **Hash Tables**
+   - Hash Map operations (insertion, deletion, lookup)
+   - Collision handling techniques (chaining, open addressing)
+
+7. **Heaps**
+   - Binary Heaps
+   - Priority Queue operations
+
+8. **Tries**
+   - Trie structure
+   - Trie operations (insertion, deletion, search)
+
+9. **Disjoint Set Union (Union-Find)**
+   - Union and Find operations
+   - Path compression and union by rank
+
+10. **Advanced Data Structures**
+    - Segment Trees
+    - Fenwick Trees (Binary Indexed Trees)
+    - AVL Trees
+    - B-Trees
+
+11. **Graph Algorithms**
+    - Minimum Spanning Tree (Prim's, Kruskal's)
+    - Topological Sorting
+    - Network Flow algorithms
+   
+```md
+# Complexity Chart for Data Structures
+
+| Data Structure       | Access   | Search   | Insertion | Deletion | Space Complexity |
+|----------------------|----------|----------|-----------|----------|------------------|
+| Array                | O(1)     | O(n)     | O(n)      | O(n)     | O(n)             |
+| Linked List          | O(n)     | O(n)     | O(1)      | O(1)     | O(n)             |
+| Doubly Linked List   | O(n)     | O(n)     | O(1)      | O(1)     | O(n)             |
+| Stack                | O(n)     | O(n)     | O(1)      | O(1)     | O(n)             |
+| Queue                | O(n)     | O(n)     | O(1)      | O(1)     | O(n)             |
+| Binary Tree          | O(log n) | O(log n) | O(log n)  | O(log n) | O(n)             |
+| Binary Search Tree   | O(log n) | O(log n) | O(log n)  | O(log n) | O(n)             |
+| AVL Tree             | O(log n) | O(log n) | O(log n)  | O(log n) | O(n)             |
+| Hash Table           | N/A      | O(1)     | O(1)      | O(1)     | O(n)             |
+| Heap (Binary Heap)   | O(1)     | O(log n) | O(log n)  | O(log n) | O(n)             |
+| Trie                 | O(m)     | O(m)     | O(m)      | O(m)     | O(n)             |
+| Disjoint Set Union   | N/A      | O(log n) | O(log n)  | O(log n) | O(n)             |
+| Segment Tree         | O(log n) | O(log n) | O(log n)  | O(log n) | O(n)             |
+| Fenwick Tree         | O(log n) | O(log n) | O(log n)  | O(log n) | O(n)             |
+| B-Tree               | O(log n) | O(log n) | O(log n)  | O(log n) | O(n)             |
+```
+
+Note: 
+- "Access" refers to accessing an element by index or key.
+- "Search" refers to searching for an element based on a key or value.
+- "Insertion" refers to adding a new element to the data structure.
+- "Deletion" refers to removing an element from the data structure.
+- "Space Complexity" represents the space required by the data structure in memory.
+
 # Algorithms for DSA
 
 ## Sorting Algorithms
