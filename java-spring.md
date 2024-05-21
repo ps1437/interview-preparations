@@ -61,7 +61,11 @@
    - What are some important features and advantages of the Spring Framework?
    - What is the Spring IOC Container?
    - What is a Spring Bean?
+   - What are the different ways to configure a Spring bean?
+   - What are the diferent scope in spring ( with Example )
    - Explain the Spring Bean lifecycle.
+   - How does Spring handle circular dependencies between beans?
+   - Explain the use of profiles in Spring configuration.
 
 2. **Annotations and Configuration**
    - What are stereotype annotations (e.g., @Service, @Component, @Repository)?
