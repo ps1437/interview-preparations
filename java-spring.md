@@ -64,27 +64,38 @@
    - What are the different ways to configure a Spring bean?
    - What are the diferent scope in spring ( with Example )
    - Explain the Spring Bean lifecycle.
-   - How does Spring handle circular dependencies between beans?
    - Explain the use of profiles in Spring configuration.
- ref : (Prototype scope) [https://apurvsheth.medium.com/spring-boot-bean-scope-is-prototype-really-a-prototype-b7c32e05ce89]
+   - How to configure multiple datasource (in spring and springboot)
+
+   ref : (Prototype scope) [https://apurvsheth.medium.com/spring-boot-bean-scope-is-prototype-really-a-prototype-b7c32e05ce89]
 
 2. **Annotations and Configuration**
    - What are stereotype annotations (e.g., @Service, @Component, @Repository)?
-   - What is the difference between @Component, @Repository, and @Service?
+   - What is the difference between @Component, @Repository, @Service.
    - What are some important Spring annotations you have used?
    - Explain the use of @Configuration and @Bean annotations.
 
 3. **Dependency Injection**
    - Explain bean wiring and the @Autowired annotation.
+   - How to Inject Prototype Bean.
    - What is the difference between @Qualifier and @Primary?
    - What are the different types of dependency injection in Spring?
    - How does constructor injection differ from setter injection?
+   - How does Spring handle circular dependencies between beans?
+
 
 4. **Spring MVC**
-   - What is the DispatcherServlet?
-   - How to handle exceptions in the Spring MVC framework?
-   - Explain the use of @RequestMapping and @GetMapping annotations.
-   - How do you handle form submission in Spring MVC?
+   - What is the purpose of the Model in Spring MVC?
+   - Differentiate between @RequestParam and @PathVariable annotations in Spring MVC.
+   - Explain the role of ViewResolver in Spring MVC.
+   - What is the difference between Model.addAttribute() and ModelAndView in Spring MVC?
+   - How does Spring MVC support internationalization and localization?
+   - What is the purpose of the @ResponseBody annotation in Spring MVC?
+   - Explain the concept of Interceptors in Spring MVC and when to use them.
+   - What is the role of the RedirectAttributes interface in Spring MVC?
+   - How does Spring MVC handle file uploads?
+   - Explain the use of @Valid and @ModelAttribute annotations in form handling with Spring MVC.
+
 
 5. **Spring AOP**
    - What is Aspect-Oriented Programming (AOP) in Spring?
@@ -94,16 +105,26 @@
 6. **Spring Boot**
    - What is Spring Boot? Why should you use it?
    - What is the difference between Spring Boot and Spring MVC?
-   - Explain the @SpringBootApplication and @EnableAutoConfiguration annotations.
-   - What is Spring Boot Actuator and its advantages?
+   - Explain the @SpringBootApplication and @EnableAutoConfiguration annotations in Spring Boot.
+   - What is Spring Boot Actuator, and what are its advantages?
    - How do you configure external properties in Spring Boot?
+   - What is the purpose of the @RestController annotation in Spring Boot?
+   - Explain the Spring Boot Starter concept and its benefits.
+   - What are Spring Boot Profiles, and how are they used?
+   - How does Spring Boot handle dependency management?
+   - What is the role of embedded servers in Spring Boot?
 
 7. **Spring Data**
-   - What is JpaRepository?
-   - Benefits of JPA Repository.
-   - What is the @Transactional annotation?
-   - Different transaction strategies in Spring.
-   - How do you use the CrudRepository and PagingAndSortingRepository interfaces?
+   - What is JpaRepository, and how does it differ from other Spring Data repositories?
+   - What are the benefits of using JPA Repository in Spring Data?
+   - Explain the @Transactional annotation in the context of Spring Data.
+   - What are the different transaction strategies available in Spring Data?
+   - How do you use the CrudRepository and PagingAndSortingRepository interfaces in Spring Data?
+   - What is Spring Data JPA, and how does it simplify data access in Spring applications?
+   - What is the purpose of Query Methods in Spring Data repositories?
+   - Explain the concept of Entity Graphs in Spring Data JPA and when to use them.
+   - What are the advantages of using Specifications in Spring Data JPA?
+   - How does Spring Data handle pagination and sorting of data?
 
 8. **Miscellaneous**
    - How to configure a Spring web application?
@@ -139,21 +160,41 @@
    - Explain the concept of bounded contexts in microservices architecture.
 
 2. **Communication**
-   - Difference between RestTemplate and Feign Client.
-   - How do microservices communicate with each other?
-   - What is the role of API Gateway in microservices?
+   - Difference between RestTemplate and Feign Client in microservices communication.
+   - How do microservices typically handle asynchronous communication?
+   - Explain the concept of service discovery in microservices architecture.
+   - What are the benefits of using message brokers (e.g., Kafka, RabbitMQ) in microservices communication?
+   - What is Circuit Breaker pattern, and how does it help in microservices communication resilience?
+   - What are gRPC and Protocol Buffers, and how do they differ from RESTful communication in microservices?
+   - What role does a service registry like Netflix Eureka play in microservices communication?
+   - Explain the concept of event-driven architecture in the context of microservices communication.
+   - What is the purpose of API versioning in microservices?
+   - How do microservices handle security and authentication during communication?
 
 3. **Spring Cloud**
-   - Explain Spring Cloud and its modules.
-   - What is an API Gateway?
-   - What is a Discovery Service?
-   - Explain the concept of service registry and discovery.
+   - Explain Spring Cloud and its various modules (e.g., Netflix OSS, Spring Cloud Config, Spring Cloud Netflix, Spring Cloud Sleuth).
+   - What is the purpose of an API Gateway in a microservices architecture, and how does Spring Cloud Gateway differ from Zuul?
+   - What is a Discovery Service, and how does it help in dynamic service registration and discovery in microservices?
+   - Explain the concept of service registry and discovery using Netflix Eureka in Spring Cloud.
+   - What is client-side load balancing, and how does it work in microservices with Spring Cloud?
+   - How does Spring Cloud Config facilitate externalized configuration management in microservices?
+   - What role does Spring Cloud Netflix play in providing features such as service discovery, circuit breakers, and intelligent routing?
+   - Explain the use of Spring Cloud Sleuth for distributed tracing in microservices.
+   - What is the purpose of distributed configuration management in Spring Cloud, and how does it differ from traditional configuration management approaches?
+   -  How does Spring Cloud handle fault tolerance and resilience in microservices communication?
 
 4. **Resilience and Monitoring**
-   - What is circuit breaker pattern and how to implement it?
-   - How to achieve centralized logging in microservices?
-   - What is trace ID?
-   - How do you implement distributed tracing in microservices?
+   - What is the Circuit Breaker pattern, and how does it help in building resilient microservices? 
+   - How can you implement the Circuit Breaker pattern in Spring Boot applications using libraries like Netflix Hystrix or Resilience4j?
+   - Explain the concept of centralized logging in microservices, and what are the benefits of using tools like ELK Stack (Elasticsearch, Logstash, Kibana) or Splunk? Rate your familiarity with this topic.
+   - What is a Trace ID, and how does it help in distributed tracing for monitoring microservices interactions?
+   - How do you implement distributed tracing in microservices using tools like Zipkin or Jaeger? Rate your experience with distributed tracing.
+   - What are metrics, and how are they used for monitoring microservices performance? Rate your familiarity with using metrics for monitoring.
+   - Explain the concept of health checks in microservices, and how can you implement them using Spring Boot Actuator? Rate your knowledge on implementing health checks.
+   - What is log aggregation, and how does it differ from centralized logging? Rate your understanding of log aggregation.
+   - How can you monitor the performance and availability of microservices in production environments using tools like Prometheus and Grafana? Rate your experience with using monitoring tools.
+   - What role do alerting and notifications play in microservices monitoring, and how can you set up alerting rules using tools like Prometheus Alertmanager or Grafana? Rate your familiarity with setting up alerts.
+
 
 5. **Security**
    - How to secure microservices?
