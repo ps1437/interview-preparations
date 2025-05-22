@@ -1,0 +1,36 @@
+https://medium.com/@contact8abhishek/tcs-react-native-interview-question-answer-ee78b687aa3b
+https://www.toptal.com/react-native/interview-questions
+https://www.testgorilla.com/blog/react-native-interview-questions/
+
+What is virtual dom
+Whats call, bind, apply?
+useEffect Hook in react native
+javascript map vs filter vs reduce 
+What are Higher-Order Components (HOC)
+What are props and how do they work
+Which HOC component do you consider your highest priority?
+What is Redux?
+What’s the difference between call, apply, and bind?
+Explain closures and their use in React Native
+Explain the difference between React and React Native
+How do you optimize performance in a React Native app
+What is AsyncStorage, and how do you secure sensitive data?
+How do you handle navigation in React Native
+What is the React Native bridge?
+What is the best practice for calling APIs?
+Aysn vs await
+Promosise and it's state ( Pending,Fulfilled Rejected)
+Redux Thunk or Redux Saga  if u worked
+What is yield?
+One-Way Data Binding:
+Is setState asynchronous or synchronous?
+What is event bubbling
+What is the Generator function?
+Difference between .on(‘click’,function() and .click(function())
+Controlled vs UnControlled Components
+Write a function to check if two strings are anagram or not
+Given an array of integers which can be in one of four order – i.Increasing 2.Decreasing 3.decreasing then increasing 4.increasing then decreasing .Write a function to find the type of array
+
+Design a reusable component in React Native to display a list of items fetched from an API. The list should support pagination (infinite scroll) and handle loading/error states. Write the code and explain how you would optimize it for performance
+Debounc vs throtting
+How can you improve the performance of a site.(Only frontend)
