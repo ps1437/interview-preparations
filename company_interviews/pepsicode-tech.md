@@ -13,6 +13,8 @@
 11. Idemponentcy proeprty in kafka
 
 ## Guess the OP
+
+```java
 List<String> names = List.of("Alice", "Bob", "Charlie");
  
 names.stream()
@@ -22,10 +24,12 @@ names.stream()
      })
      .limit(1)
      .forEach(System.out::println);
+```
 What is the output and how many times is map() executed?
 
 
 
+```java
 @Service
 
 public class OrderService {
@@ -48,7 +52,7 @@ public class OrderService {
     }
 
 }
-
+```
  Will the DB changes in saveOrder() be rolled back?
 
  
