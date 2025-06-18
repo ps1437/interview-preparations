@@ -13,14 +13,43 @@
 11. Idemponentcy proeprty in kafka
 
 ## Guess the OP
+List<String> names = List.of("Alice", "Bob", "Charlie");
+ 
+names.stream()
+     .map(name -> {
+         System.out.println("Mapping: " + name);
+         return name.toUpperCase();
+     })
+     .limit(1)
+     .forEach(System.out::println);
+What is the output and how many times is map() executed?
 
-empList.stream()
-       .map(x -> {
-           soup(x);
-           return x.toUpperCase();
-       })
-       .limit(1)
-       .forEach(System.out::println);
 
-How many times Map is run and what is the O/P
+
+@Service
+
+public class OrderService {
+ 
+    @Transactional
+    public void placeOrder() {
+
+        saveOrder(); // transactional
+
+        throw new RuntimeException("Simulate failure");
+
+    }
+ 
+    public void saveOrder() {
+
+        // DB save logic
+
+        System.out.println("Order saved.");
+
+    }
+
+}
+
+ Will the DB changes in saveOrder() be rolled back?
+
+ 
 
