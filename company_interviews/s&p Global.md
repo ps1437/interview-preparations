@@ -137,6 +137,11 @@ Indexes on:
 - Defensive copy in constructors/getters
 - Use builder if needed
 
+ ## Testing
+  - Spy vs Mock Vs Stub
+  - How to testing Kafka
+  - TestContainer and it's usecase
+
 **Kafka API tip**:
 - Use immutable DTOs as Kafka event payloads to prevent side-effects across services.
 
