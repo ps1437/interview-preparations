@@ -1,4 +1,8 @@
 ### Electronic Arts
+### VMware Software	
+### Cvent
+### TIBCO Software	
+### Automatic Data Processing (ADP)	
 ### Salesforce
 ### Honeywell	
 ### ServiceNow
