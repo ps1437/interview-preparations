@@ -54,11 +54,19 @@
    - What is the difference between `notify()` and `notifyAll()`?
    - What are the different states of a thread lifecycle?
    - What is the difference between `Runnable` and `Callable` in Java?
+   - Volatile vs Atomatic variable with example
+   - Type of Locks ( ReadWrite vs ReentrantLock)
+   - What are daemon threads?
+   - Difference between ReentrantLock and synchronized block.
+   - Executor service vs Thread
+   - ConcurrentHashMap vs Collections.synchronizedMap()
+   - CountDownLatch vs cyclicbarrier
    - Sleep vs wait
 
 7. **Design Patterns**
    - Explain different design patterns you have worked with, such as Singleton, Factory, Prototype, Proxy, and Builder.
-   - Singleton - How can we break Singleton design pattern
+   - Singleton - How can we break Singleton design pattern ( static class approach must)
+   - Publisher/Subscriber (Pub/Sub) and Observer
 
 8. **Miscellaneous**
    - What is an immutable class? How to create an immutable class?
