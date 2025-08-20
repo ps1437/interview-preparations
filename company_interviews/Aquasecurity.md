@@ -4,17 +4,17 @@
 1. How do you make sure Kafka events are published **only once**?
 2. Why can one Kafka message be consumed by **two consumers** if they belong to **different consumer groups**?
 3. If a client sends a request but then disconnects before processing finishes, how do you ensure the request is **rolled back**?
-4. Retry Machanism in Kafka
+4. Retry Mechanism in Kafka
 4. What are **ACID properties** in a database?
 5. What are different types of **Transaction Propagation** in Spring?
 6. What are different types of **Database Locks**?
-7. Isolation level and usecase
-8. How deployemnt is working
-9. How u make sure Zero DownTime during Deployment
-10. AWS services and what you used in realtime
-11. Prject Architecture
+7. Isolation level and use case
+8. How deployment is working
+9. How u make sure Zero Downtime during Deployment
+10. AWS services and what you used in Realtime
+11. Project Architecture
 12. You have an integer array and 3 threads. Each thread should increment an element in the array, but **no two threads should update the same index at the same time**.How would you implement this in Java to ensure **index-level atomicity**?
-13. Resillency design pattern
+13. Resiliency design pattern
 
 ---
 ## Answers
