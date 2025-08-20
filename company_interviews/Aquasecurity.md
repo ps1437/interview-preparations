@@ -346,3 +346,143 @@ Locks prevent conflicts when multiple transactions access the same resource.
 | **Locks** | Shared, Exclusive, Update, Intent, Row/Table/Page |
 
 
+# ❓ Question  
+You have an integer array and 3 threads. Each thread should increment an element in the array, but **no two threads should update the same index at the same time**.  
+
+How would you implement this in Java to ensure **index-level atomicity**?
+
+---
+
+# ✅ Answer  
+
+There are multiple approaches to ensure index-level atomic updates in Java:
+
+---
+
+## 🔹 1. Using `AtomicInteger` as Task Distributor  
+We can use an `AtomicInteger` counter to assign **unique indexes** to threads.  
+
+```java
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class AtomicIntegerIncrementExample {
+    private final int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
+    private final AtomicInteger index = new AtomicInteger(0);
+
+    public void incrementByOne() {
+        int i = index.getAndIncrement(); 
+        if (i < array.length) {
+            array[i] = array[i] + 1;
+        }
+    }
+}
+````
+
+👉 Ensures **no two threads get the same index**.
+👉 Simple and lock-free.
+
+---
+
+## 🔹 2. Using `AtomicIntegerArray`
+
+If we want multiple threads to safely update different (or even the same) indexes concurrently, we can use `AtomicIntegerArray`.
+
+```java
+import java.util.concurrent.atomic.AtomicIntegerArray;
+
+public class AtomicIntegerArrayExample {
+    private final AtomicIntegerArray array = new AtomicIntegerArray(new int[]{1,2,3,4,5,6,7,8});
+
+    public void incrementByOne(int index) {
+        array.incrementAndGet(index); // thread-safe per index
+    }
+
+    public int get(int index) {
+        return array.get(index);
+    }
+}
+```
+
+👉 Provides **atomic per-index updates** without explicit locking.
+👉 Best when multiple threads may hit the same index.
+
+---
+
+## 🔹 3. Using Per-Index Locks (`ReentrantLock[]`)
+
+For more complex updates (not just `+1`), you can use an array of locks.
+
+```java
+import java.util.concurrent.locks.ReentrantLock;
+
+public class IndexLockArray {
+    private final int[] array = {1,2,3,4,5,6,7,8};
+    private final ReentrantLock[] locks;
+
+    public IndexLockArray(int size) {
+        locks = new ReentrantLock[size];
+        for (int i = 0; i < size; i++) {
+            locks[i] = new ReentrantLock();
+        }
+    }
+
+    public void incrementByOne(int index) {
+        locks[index].lock();
+        try {
+            array[index]++;
+        } finally {
+            locks[index].unlock();
+        }
+    }
+
+    public int get(int index) {
+        return array[index];
+    }
+}
+```
+
+👉 Allows **parallel updates to different indexes**.
+👉 Only locks the index being updated.
+
+---
+
+## 🔹 4. Using `synchronized` on Per-Index Objects
+
+Instead of locks, use an `Object[]` as index-level monitors.
+
+```java
+public class IndexSynchronizedArray {
+    private final int[] array = {1,2,3,4,5,6,7,8};
+    private final Object[] locks;
+
+    public IndexSynchronizedArray(int size) {
+        locks = new Object[size];
+        for (int i = 0; i < size; i++) {
+            locks[i] = new Object();
+        }
+    }
+
+    public void incrementByOne(int index) {
+        synchronized (locks[index]) {
+            array[index]++;
+        }
+    }
+
+    public int get(int index) {
+        return array[index];
+    }
+}
+```
+
+👉 Simpler than `ReentrantLock[]`, but less flexible.
+
+---
+
+# 📝 Key Takeaways
+
+1. **Simple index distribution** → Use `AtomicInteger` counter.
+2. **Atomic per-index increments** → Use `AtomicIntegerArray`.
+3. **Complex updates per index** → Use `ReentrantLock[]` or `synchronized` per index.
+4. Avoid a **global lock** on the whole array (kills concurrency).
+
+
