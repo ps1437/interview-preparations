@@ -1,0 +1,127 @@
+  "releaseWorkItems": [
+                    {
+                        "id": "11472592",
+                        "url": "https://spglobal.visualstudio.com/Ratings/_workitems/edit/11472592",
+                        "workItemId": "11472592",
+                        "startDate": "2026-08-01T01:30:00Z",
+                        "endDate": "2026-08-01T16:00:00Z",
+                        "targetDate": "2026-08-01T01:30:00Z",
+                        "cmdbApplicationName": "devportal-platform-rest",
+                        "hasExceptionTicket": false,
+						  "rwiExceptionDetails":[{
+  "type": "type_4136c6bd71a0",
+  "number": "number_57a326bf6c61",
+  "sysId": "sysId_afb456b2fd12",
+  "openedAt": "openedAt_0c0ab2654f80",
+  "state": "state_f8456de1234c",
+  "approval": "approval_38fd26592a75",
+  "shortDescription": "shortDescription_1a51dddd67ae"
+					}},
+                        "builds": [
+                            {
+                                "buildId": "7344541",
+                                "repoName": "mc-platform-rest",
+                                "startDate": "2026-06-19T13:17:25.1987465Z",
+                                "status": "failed",
+                                "isScaSvaAgingExpired": true,
+                                "isDvaAgingExpired": false,
+                                "buildUrl": "https://spglobal.visualstudio.com/ratingsproducts/_build/results?buildId=7344541&view=results",
+                                "failedLogsApiUrl": "/api/v1/pipeline/failed-logs?buildId=7344541",
+                                "failedSecuritySteps": [
+                                   {
+                                        "tool": "MEND",
+                                        "scanType": "SCA",
+                                        "stepName": "Mend Scan and Build Failure",
+                                        "status": "FAILED",
+                                        "mediumCount": 0,
+                                        "criticalCount": 0,
+                                        "highCount": 2,
+                                        "lowCount": 0,
+                                        "vulnerabilities": [
+                                            {
+                                                "libraryFileName": "httpcore5-h2-5.3.6.jar",
+                                                "librarySha1": "5b4b321d0001aac957f5db293e3cbc4099fc15b8",
+                                                "severity": "high",
+                                                "cve": "CVE-2026-54428",
+                                                "cvss3Score": "7.5",
+                                                "adoBugId": "11579082",
+                                                "adoBugLink": "https://dev.azure.com/spglobal/Ratings/_workitems/edit/11579082"
+                                            }
+                                        ]
+                                    }
+                                    {
+                                        "tool": "FORTIFY",
+                                        "scanType": "SVA",
+                                        "stepName": "FortifyBuildFailure",
+                                        "status": "FAILED",
+                                        "mediumCount": 0,
+                                        "criticalCount": 25,
+                                        "highCount": 5,
+                                        "lowCount": 0,
+                                        "vulnerabilities": [
+                                            {
+                                                "libraryFileName": "Cross-Site Scripting: Persistent",
+                                                "severity": "Critical",
+                                                "detailsUrl": "https://ssc.spglobal.com/ssc/html/ssc/version/25329/fix",
+                                                "fileDetails": [
+                                                    {
+                                                        "fileName": "src/main/java/com/spglobal/ratings/feature/emailAutomation/service/Impl/MyDocsServiceImpl.java",
+                                                        "lineNumber": 215,
+                                                        "issueId": "7BC91886249445C93E2C9AC27C383895",
+                                                        "issueUrl": "https://ssc.spglobal.com/ssc/html/ssc/version/25329/fix/21859205/?engineType=SCA&issue=7BC91886249445C93E2C9AC27C383895"
+                                                    }
+                                                ],
+                                                "affectedFiles": [
+                                                    {
+                                                        "file": "MyDocsServiceImpl.java",
+                                                        "occurrences": 8
+                                                    }
+                                                ]
+                                            },
+                                           
+                                            {
+                                                "libraryFileName": "Server-Side Request Forgery",
+                                                "severity": "High",
+                                                "detailsUrl": "https://ssc.spglobal.com/ssc/html/ssc/version/25329/fix"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "buildId": "7489332",
+                                "repoName": "devportal-platform-rest",
+                                "startDate": "2026-07-10T06:08:22.7267961Z",
+                                "status": "failed",
+                                "isScaSvaAgingExpired": false,
+                                "isDvaAgingExpired": false,
+                                "buildUrl": "https://spglobal.visualstudio.com/ratingsproducts/_build/results?buildId=7489332&view=results",
+                                "failedLogsApiUrl": "/api/v1/pipeline/failed-logs?buildId=7489332",
+                                "failedSecuritySteps": [
+                                    {
+                                        "tool": "MEND",
+                                        "scanType": "SCA",
+                                        "stepName": "Mend Scan and Build Failure",
+                                        "status": "FAILED",
+                                        "mediumCount": 0,
+                                        "criticalCount": 0,
+                                        "highCount": 2,
+                                        "lowCount": 0,
+                                        "vulnerabilities": [
+                                            {
+                                                "libraryFileName": "httpcore5-h2-5.3.6.jar",
+                                                "librarySha1": "5b4b321d0001aac957f5db293e3cbc4099fc15b8",
+                                                "severity": "high",
+                                                "cve": "CVE-2026-54428",
+                                                "cvss3Score": "7.5",
+                                                "adoBugId": "11579082",
+                                                "adoBugLink": "https://dev.azure.com/spglobal/Ratings/_workitems/edit/11579082"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+               
